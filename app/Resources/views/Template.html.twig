@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>thePencil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Le styles -->
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+              }
+        </style>
+        {% block stylesheets %}
+        {% endblock %}
+        {# fuente del logo 
+        <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />#}
+        <link href="{{ asset('css/bootstrap-template1.min.css')}}" rel="stylesheet"> 
+         
+        
+        {# jquery #}
+        
+        {#<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css"
+        rel="stylesheet">#}
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Fav and touch icons -->
+        {#<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">#}
+</head>
+    
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+
+                    </a>
+                    <a class="brand" href="{{path('control_f_pencil_homepage')}}">thePencil</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            {# <li class="active"> #}
+                            <li {% block CursoSelected %}{% endblock %}>
+                                <a href="{{ path('curso') }}">Curso</a>
+                            </li>
+                            <li {% block AlumnoSelected %}{% endblock %}>
+                                <a href="{{ path('alumno') }}">Alumno</a>
+                            </li>
+                            <li {% block CuotaSelected %}{% endblock %}>
+                                <a href="#">Cuota</a>
+                            </li>
+                            <li {% block ProfesorSelected %}{% endblock %}>
+                                <a href="{{ path('profesor') }}">Profesor</a>
+                            </li>
+                            <li {% block PromocionSelected %}{% endblock %}>
+                                <a href="{{ path('promocion') }}">Promocion</a>
+                            </li>
+                            <li {% block TagSelected %}{% endblock %}>
+                                <a href="{{ path('tag')}}">Tag</a>
+                            </li>
+                            <li {% block AsistenciaSelected %}{% endblock %}>
+                                <a href="#">Asistencia</a>
+                            </li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                            <input class="span2" placeholder="Email" type="text">
+                            <input class="span2" placeholder="Password" type="password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Main hero unit for a primary marketing message or call to action
+            -->
+            <div class="hero-unit">
+                 
+                     <h1>thePencil</h1>
+
+                     <p class="">Students Management System</p>
+		
+            </div>
+            <hr>
+            {% block submenu %}
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav"></ul>
+                    </div>
+                </div>
+            {% endblock %}
+            
+            
+                {% block body %}
+                {% endblock %}
+            
+            
+            
+            <hr>
+            <footer>
+                <p class="">© Company 2012</p>
+            </footer>
+        </div>
+        {% block javascript %}
+        {% endblock %}
+</body>
+
+</html>

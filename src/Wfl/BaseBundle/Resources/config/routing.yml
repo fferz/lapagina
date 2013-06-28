@@ -1,0 +1,7 @@
+# wfl_base_homepage:
+#     pattern:  /hello/{name}
+#     defaults: { _controller: WflBaseBundle:Default:index }
+
+wfl_base_homepage:
+    pattern: /home
+    defaults: { _controller: WflBaseBundle:Default:index }

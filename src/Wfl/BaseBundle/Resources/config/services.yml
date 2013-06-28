@@ -1,0 +1,7 @@
+parameters:
+#    wfl_base.example.class: Wfl\BaseBundle\Example
+
+services:
+#    wfl_base.example:
+#        class: %wfl_base.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

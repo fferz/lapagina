@@ -1,0 +1,4 @@
+wfl_base:
+    resource: "@WflBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
