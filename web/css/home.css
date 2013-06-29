@@ -2690,7 +2690,7 @@ button.btn.btn-mini, input.btn.btn-mini[type="submit"] {
     color: #333333;
 }
 .navbar .navbar-link:hover {
-    color: #00B4DA;
+    color: #FF4500; /*00B4DA*/
 }
 .navbar .btn, .navbar .btn-group {
     margin-top: 5px;
@@ -2817,12 +2817,12 @@ button.btn.btn-mini, input.btn.btn-mini[type="submit"] {
 }
 .navbar .nav > li > a:hover {
     background-color: transparent;
-    color: #00B4DA;
+    color: #FF4500; /*00B4DA*/
     text-decoration: none;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
     background-color: transparent;
-    color: #00B4DA;
+    color: #FF4500; /*00B4DA*/
     text-decoration: none;
 }
 .navbar .divider-vertical {
@@ -3110,7 +3110,7 @@ button.btn.btn-mini, input.btn.btn-mini[type="submit"] {
     margin-bottom: 0;
 }
 .modal-footer {
-    background-color: #F5F5F5;
+    background-color: #BF1207;/*F5F5F5*/
     border-radius: 0 0 6px 6px;
     border-top: 1px solid #DDDDDD;
     box-shadow: 0 1px 0 #FFFFFF inset;
@@ -5021,7 +5021,7 @@ h1 span, h2 span, .title span {
     letter-spacing: 0;
 }
 .title-underline {
-    border-bottom: 6px solid #A9E3F0;
+    border-bottom: 6px solid #BF1207; /*A9E3F0*/
     padding-bottom: 10px;
 }
 #whoweare h2 {
@@ -5116,7 +5116,7 @@ section.home h2 span {
     margin: 0;
 }
 .header {
-    background: none repeat scroll 0 0 #00B4DA;
+    background: none repeat scroll 0 0 #FF4500; /*00B4DA*/
     height: 110px;
     padding-top: 110px;
 }
@@ -5132,7 +5132,7 @@ section.home h2 span {
     width: 100%;
 }
 .talktous-bar {
-    background: none repeat scroll 0 0 #00B4DA;
+    background: none repeat scroll 0 0 #FF4500; /*00B4DA*/
     height: 25px;
     padding: 13px 0 0;
 }
@@ -5158,8 +5158,8 @@ section.home h2 span {
     z-index: 10;
 }
 section.talktous {
-    background: none repeat scroll 0 0 #00B4DA;
-    border-top: 3px solid #A9E3F0;
+    background: none repeat scroll 0 0 #FF4500; /*00B4DA*/
+    border-top: 3px solid #A9E3F0;/*A9E3F0*/
     color: white;
     display: none;
     height: 550px;
@@ -5261,7 +5261,7 @@ form.calm-form {
     width: 100%;
 }
 form.calm-form input, form.calm-form textarea {
-    background: none repeat scroll 0 0 #4DCAE4;
+    background: none repeat scroll 0 0 #FFFFFF; /*4DCAE4*/
     border: medium none;
     border-radius: 0 0 0 0;
     box-shadow: none;
@@ -5295,10 +5295,15 @@ form.calm-form input.submit {
     position: absolute;
 }
 .navbar-inner {
-    background-color: transparent !important;
+    background-color: #ff4500; 
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+   
+    /*background-color: transparent !important;
     background-image: none !important;
     box-shadow: none;
-    padding: 0;
+    padding: 0;*/
 }
 .navbar .brand {
     padding-top: 16px;
@@ -5578,7 +5583,7 @@ form.calm-form input.submit {
     font-weight: bold;
 }
 footer {
-    background: none repeat scroll 0 0 #33C2E1;
+    background: none repeat scroll 0 0 #BF1207; /*33C2E1*/
     color: white;
     float: left;
     height: auto;
@@ -5653,7 +5658,7 @@ section, .content {
     width: 96%;
 }
 .navouter {
-    background: none repeat scroll 0 0 #00B4DA;
+    background: none repeat scroll 0 0 #000000; /*00B4DA*/
     height: auto;
     position: relative;
 }
@@ -5777,7 +5782,7 @@ footer span {
     width: 90% !important;
 }
 body.home {
-    background: none repeat scroll 0 0 #00B4DA;
+    background: none repeat scroll 0 0 #FF4500;/*00B4DA*/
 }
 .navbar {
     display: none;
@@ -5791,7 +5796,7 @@ section.home {
     z-index: 1;
 }
 section.calm {
-    background: none repeat scroll 0 0 #00B4DA;
+    background: none repeat scroll 0 0 #FF4500;
     height: 655px;
     position: fixed;
     width: 100%;
@@ -5859,7 +5864,7 @@ section.whatwedo .service-feature p {
     margin-top: 0;
 }
 section.whoweare {
-    background: none repeat scroll 0 0 #363636;
+    background: none repeat scroll 0 0 #000000; /*363636*/
     padding-bottom: 70px;
 }
 section.whoweare h2 {

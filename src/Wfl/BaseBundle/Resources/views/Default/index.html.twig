@@ -14,28 +14,90 @@
 
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <link rel="shortcut icon" href="/static//favicon.ico" />
+    <!--<link rel="stylesheet" href="{{ asset('css/style.css')}}" /> -->
     <link rel="stylesheet" href="{{ asset('css/libs/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}" /> 
+    <link href="{{ asset('bootstrap/css/bootstrap-responsive.min.css')}}" rel="stylesheet"/>
     
     <meta name="google-site-verification" content="i7rhD3f-1B2YTLL6-Ww_7otSJGNP6awiXPrw7Q4pWPs" />
     
-<link href="{{ asset('css/libs/jquery.heroCarousel.css')}}" rel="stylesheet"/>	 
-<link href="{{ asset('css/libs/anythingslider.css')}}" rel="stylesheet" />
+ <!--<link href="{{ asset('css/libs/jquery.heroCarousel.css')}}" rel="stylesheet"/>
+ <link href="{{ asset('bootstrap/css/bootstrap-responsive.min.css')}}" rel="stylesheet"/>
+     <script src="{{ asset('js/libs/modernizr-2.5.3-respond-1.1.0.min.js')}}"></script>
+     <link href="{{ asset('css/libs/anythingslider.css')}}" rel="stylesheet" /> -->
+    
 <link href="{{ asset('css/home.css')}}" rel="stylesheet" />
-
-
-
-<script src="{{ asset('js/libs/modernizr-2.5.3-respond-1.1.0.min.js')}}"></script>
-    
-    
+  
 </head>
 <body class="home" >
+    
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </a>
+                <a class="brand" href="#">Project name</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b>
+
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Nav header</li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form pull-right">
+                        <input class="span2" type="text" placeholder="Email">
+                        <input class="span2" type="password" placeholder="Password">
+                        <button type="submit" class="btn">Sign in</button>
+                    </form>
+                </div>
+                <!--/.nav-collapse -->
+            <!--</div>
+        </div>
+    </div>-->
+    
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-    <div class="container navouter">
+    <!--<div class="container navouter">
     <nav class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top animated fadeInDown" style="display: block;">
       <nav class="navbar-inner">
         <nav class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">-->
+       <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -43,7 +105,8 @@
           <a class="brand scroll" href="/#top" title="Calm Digital">
               <img src="/static/img/logo.png" alt="Calm Digital">
           </a>
-          <nav class="nav-collapse">
+          <!--<nav class="nav-collapse">-->
+          <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/#whatwedo" title="What we do" class="scroll">What we do</a></li>
               <li><a href="/#whoweare" title="Who we are" class="scroll">Who we are</a></li>
@@ -52,11 +115,14 @@
               <li><a href="/vacancies/" title="Vacancies">Vacancies</a></li>
               <li><a href="/#talktous" title="Talk to us" class="scroll">Talk to us</a></li>
             </ul>
+          </div>
           </nav><!--/.nav-collapse -->
         </nav>
       </nav>
+    </div>
     </nav>
     </div>
+    </div>           
     
 <div id="top"><a name="top"></a></div>
 <section class="home calm">
@@ -397,7 +463,7 @@
         </div>
     </footer>
 	
-<script src="{{ asset('/ajax.googleapis.com/jquery1.7.2/jquery.min.js')}}"></script>
+ <script src="{{ asset('/ajax.googleapis.com/jquery1.7.2/jquery.min.js')}}"></script>
 <script>window.jQuery || document.write('<script src="/static/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="{{ asset('/js/libs/jquery.scroll.events.js')}}"></script>
 <script src="{{ asset('/js/libs/bootstrap/bootstrap.min.js')}}"></script>
@@ -415,6 +481,6 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-<script type="text/javascript">document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https" : "http") + "://cdn.mouseflow.com/projects/13cf9994-311c-493e-963f-a783af5333bb.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https" : "http") + "://cdn.mouseflow.com/projects/13cf9994-311c-493e-963f-a783af5333bb.js' type='text/javascript'%3E%3C/script%3E"));</script> 
 </body>
 </html>

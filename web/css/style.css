@@ -6603,10 +6603,11 @@ form.calm-form input.submit {
     background: none;
 }
 .navbar {
-    background: transparent url(/static/img/blue-trans-1px.png) repeat !important;
+    /*background: transparent url(/static/img/blue-trans-1px.png) repeat !important;*/
+    background-color: #FF4500;
 }
 .touch .navbar {
-    /display: block;/
+    /*display: block;*/
 
     position: absolute;
 }
