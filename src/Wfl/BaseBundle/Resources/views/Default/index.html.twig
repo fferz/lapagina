@@ -314,11 +314,12 @@
         </ul>
     </div>
     <a class="scroll scroll-prompt" href="#whoweare" title=""><span>Click to Scroll</span></a>
-</section>                 
+</section> 
+
 <section class="home whoweare"  id="whoweare">
     <a name="whoweare"></a>
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div class="span12">
                 <h2><span>Your Calm Team</span></h2>
             </div>
@@ -328,10 +329,64 @@
                 <p>The individuals at Calm Digital are the company's greatest assets. Our team takes a "sleeves rolled up" approach and apply the knowledge they've gained all over the world with you to help you get closer to your audiences.</p>
                 <div class="infographic"></div>
             </div>
-        </div>        
+        </div>-->
+        
+        <div id="myCarousel" class="carousel slide carousel-fade">
+            <!--<ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+        
+            </ol>-->
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                                <img src="{{ asset('img/descarga.jpg')}}" width="100%">
+				<div class="carousel-caption">
+					<h4>First label</h4>
+					<p>A working Bootstrap carousel example.</p>
+				</div>
+                </div>
+                <div class="item">
+				<img src="{{ asset('img/descarga1.jpg')}}" width="100%">
+				<div class="carousel-caption">
+					<h4>Second label</h4>
+					<p>This is the second slide text.</p>
+				</div>
+		</div>
+                <div class="item">
+				<img src="{{ asset('img/descarga2.jpg')}}" width="100%">
+				<div class="carousel-caption">
+					<h4>Third label</h4>
+					<p>Take note of the 'active' and 'slide' classes.</p>
+				</div>
+		</div>
+                <div class="item">
+				<img src="{{ asset('img/descarga3.jpg')}}" width="100%">
+				<div class="carousel-caption">
+					<h4>Fourth label</h4>
+					<p>Take note of the 'active' and 'slide' classes.</p>
+				</div>
+		</div>
+                <div class="item">
+				<img src="{{ asset('img/descarga4.jpg')}}" width="100%">
+				<div class="carousel-caption">
+					<h4>Fifth label</h4>
+					<p>Take note of the 'active' and 'slide' classes.</p>
+				</div>
+		</div>
+            </div>
+            <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+        
     </div>
     <a class="scroll scroll-prompt" href="#ourwork" title=""><span>Click to Scroll</span></a>
 </section>
+
 <section class="home ourwork" id="ourwork">
     <a name="ourwork"></a>
     <div class="container">
@@ -466,7 +521,7 @@
  <script src="{{ asset('/ajax.googleapis.com/jquery1.7.2/jquery.min.js')}}"></script>
 <script>window.jQuery || document.write('<script src="/static/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="{{ asset('/js/libs/jquery.scroll.events.js')}}"></script>
-<script src="{{ asset('/js/libs/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
 
 <script src="{{ asset('/js/libs/jquery.easing-1.3.js')}}"></script>
 <script src="{{ asset('/js/libs/jquery.heroCarousel-1.3-ck.js')}}"></script>
@@ -482,5 +537,15 @@
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 <script type="text/javascript">document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https" : "http") + "://cdn.mouseflow.com/projects/13cf9994-311c-493e-963f-a783af5333bb.js' type='text/javascript'%3E%3C/script%3E"));</script> 
+
+<!--carusel script -->
+<script>
+
+$(function() {
+  $('#carousel').carousel();
+});
+
+</script>
+
 </body>
 </html>
