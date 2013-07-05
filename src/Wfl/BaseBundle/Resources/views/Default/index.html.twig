@@ -15,7 +15,7 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <link rel="shortcut icon" href="/static//favicon.ico" />
     <!--<link rel="stylesheet" href="{{ asset('css/style.css')}}" /> -->
-    <link rel="stylesheet" href="{{ asset('css/libs/animate.min.css')}}" />
+    <!--<link rel="stylesheet" href="{{ asset('css/libs/animate.min.css')}}" />-->
     <link href="{{ asset('bootstrap/css/bootstrap-responsive.min.css')}}" rel="stylesheet"/>
     
     <meta name="google-site-verification" content="i7rhD3f-1B2YTLL6-Ww_7otSJGNP6awiXPrw7Q4pWPs" />
@@ -26,6 +26,10 @@
      <link href="{{ asset('css/libs/anythingslider.css')}}" rel="stylesheet" /> -->
     
 <link href="{{ asset('css/home.css')}}" rel="stylesheet" />
+
+<!-- carousel libs -->
+<script src="{{ asset('bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+<link href="{{ asset('carousel/bootstrap-combined.min.css')}}" rel="stylesheet" />
   
 </head>
 <body class="home" >
@@ -319,64 +323,45 @@
 <section class="home whoweare"  id="whoweare">
     <a name="whoweare"></a>
     <div class="container">
-        <!--<div class="row">
-            <div class="span12">
-                <h2><span>Your Calm Team</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span12">
-                <p>The individuals at Calm Digital are the company's greatest assets. Our team takes a "sleeves rolled up" approach and apply the knowledge they've gained all over the world with you to help you get closer to your audiences.</p>
-                <div class="infographic"></div>
-            </div>
-        </div>-->
         
-        <div id="myCarousel" class="carousel slide carousel-fade">
-            <!--<ol class="carousel-indicators">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-        
-            </ol>-->
+            </ol>
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="item active">
-                                <img src="{{ asset('img/descarga.jpg')}}" width="100%">
+                                <img src="{{ asset('img/descarga1.jpg')}}" width="100%">
 				<div class="carousel-caption">
 					<h4>First label</h4>
 					<p>A working Bootstrap carousel example.</p>
 				</div>
                 </div>
                 <div class="item">
-				<img src="{{ asset('img/descarga1.jpg')}}" width="100%">
+				<img src="{{ asset('img/descarga2.jpg')}}" width="100%">
 				<div class="carousel-caption">
 					<h4>Second label</h4>
 					<p>This is the second slide text.</p>
 				</div>
 		</div>
                 <div class="item">
-				<img src="{{ asset('img/descarga2.jpg')}}" width="100%">
+				<img src="{{ asset('img/descarga3.jpg')}}" width="100%">
 				<div class="carousel-caption">
 					<h4>Third label</h4>
 					<p>Take note of the 'active' and 'slide' classes.</p>
 				</div>
 		</div>
                 <div class="item">
-				<img src="{{ asset('img/descarga3.jpg')}}" width="100%">
+				<img src="{{ asset('img/descarga4.jpg')}}" width="100%">
 				<div class="carousel-caption">
 					<h4>Fourth label</h4>
 					<p>Take note of the 'active' and 'slide' classes.</p>
 				</div>
 		</div>
-                <div class="item">
-				<img src="{{ asset('img/descarga4.jpg')}}" width="100%">
-				<div class="carousel-caption">
-					<h4>Fifth label</h4>
-					<p>Take note of the 'active' and 'slide' classes.</p>
-				</div>
-		</div>
+                
             </div>
             <!-- Carousel nav -->
                 <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -518,7 +503,7 @@
         </div>
     </footer>
 	
- <script src="{{ asset('/ajax.googleapis.com/jquery1.7.2/jquery.min.js')}}"></script>
+<!-- <script src="{{ asset('/ajax.googleapis.com/jquery1.7.2/jquery.min.js')}}"></script>
 <script>window.jQuery || document.write('<script src="/static/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="{{ asset('/js/libs/jquery.scroll.events.js')}}"></script>
 <script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
@@ -537,15 +522,31 @@
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 <script type="text/javascript">document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https" : "http") + "://cdn.mouseflow.com/projects/13cf9994-311c-493e-963f-a783af5333bb.js' type='text/javascript'%3E%3C/script%3E"));</script> 
-
-<!--carusel script -->
+-->
+<!--carusel script 
 <script>
 
 $(function() {
   $('#carousel').carousel();
 });
 
+</script>-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-366077-13']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();  
 </script>
 
+<script>
+    TowTruckConfig_enableAnalytics = true;
+    TowTruckConfig_cloneClicks = "#run, .toggler"; 
+</script>
+
+<script src="{{ asset('https://towtruck.mozillalabs.com/towtruck.js')}}"></script>
 </body>
 </html>
