@@ -5865,7 +5865,7 @@ section.whatwedo .service-feature p {
 }
 section.whoweare {
     background: none repeat scroll 0 0 #000000; /*363636*/
-    padding-bottom: 70px;
+    padding-bottom: 0px; /*70px*/
 }
 section.whoweare h2 {
     color: #00B4DA;
@@ -5881,7 +5881,7 @@ section.whoweare .infographic {
     background: url("/static/img/yourcalmteam.gif") no-repeat scroll 0 0 / 100% auto transparent;
     float: left;
     height: 396px;
-    margin-bottom: 30px;
+    margin-bottom: 00px; /*30px*/
     width: 961px;
 }
 section.ourwork {
@@ -6658,13 +6658,14 @@ ul.whatwedo-nav li a {
     color: #D7D7D7 !important;
 }
 #whoweare {
-    padding-bottom: 30px;
+    padding-bottom: 0px; /*30px*/
 }
 #whoweare h2 {
     background-size: 95% auto;
     height: 50px;
-    margin: 10px 0;
+    margin: 0px 0; /*10px 0*/
 }
+
 .slider-container, #slider {
     margin: 0;
     width: 100% !important;
@@ -6673,7 +6674,7 @@ ul.whatwedo-nav li a {
     display: none;
 }
 section.whoweare {
-    height: auto;
+    height: 100%; /*auto*/ 
 }
 section.whoweare .infographic {
     background: url("/static/img/yourcalmteam-vert.gif") no-repeat scroll 0 0 transparent;

@@ -8,7 +8,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('WflBaseBundle:Default:index1.html.twig' );
+        return $this->render('WflBaseBundle:Default:index.html.twig' );
     }
 }
  //array('name' => $name)
