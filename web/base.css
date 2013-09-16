@@ -1,0 +1,25 @@
+
+
+.home {
+    background-color: #FAA732;
+    height: 800px;
+}
+
+.home hgroup h3 {
+   font-family: 'Shadows Into Light Two';
+   font-size: 80px;
+   color: white;
+   
+}
+
+.home hgroup h1 {
+   font-family: 'Arial';
+   font-size: 40px;
+   
+}
+
+.home hgroup {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}

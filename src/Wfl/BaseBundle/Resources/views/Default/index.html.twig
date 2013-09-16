@@ -34,7 +34,12 @@
     <script src="{{ asset('carousel/bootstrap-carousel.js') }}"></script>
     <link href="{{ asset('css/libs/carousel.css')}}" rel="stylesheet" />
 
-
+<!-- image gallery libs -->
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-responsive.css') }}">
+    <!--[if lt IE 7]><link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-ie6.css') }}"><![endif]-->
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-image-gallery.css') }}">
   
 </head>
 <body class="home" >
@@ -300,35 +305,26 @@
             </div>
         </div>
     </div>
-    <div class="hero">
-		<div class="hero-carousel">
-		    
-		        <article class="imac">
-    				<img src="http://www.calmdigital.com/static/uploads/casestudy/azione-imac_1.jpg" alt="Azione" />
-    				<a href="/our-work/azione/" title="Azione">
-    				    <span class="casestudy-hero-title">Azione</span>
-    				    <span class="casestudy-hero-service">product brand, decals, design, web, marketing, seo</span>
-    				</a>
-    			</article>
-		    
-		        <article class="macbook">
-    				<img src="http://www.calmdigital.com/static/uploads/casestudy/pitf-macbook.jpg" alt="Pack in the Fags" />
-    				<a href="/our-work/pack-in-the-fags/" title="Pack in the Fags">
-    				    <span class="casestudy-hero-title">Pack in the Fags</span>
-    				    <span class="casestudy-hero-service">campaign identity, design, website, web app</span>
-    				</a>
-    			</article>
-		    
-		        <article class="imac">
-    				<img src="http://www.calmdigital.com/static/uploads/casestudy/stfr-imac_2.jpg" alt="Sound Training" />
-    				<a href="/our-work/sound-training/" title="Sound Training">
-    				    <span class="casestudy-hero-title">Sound Training</span>
-    				    <span class="casestudy-hero-service">identity, design, website, web app, seo</span>
-    				</a>
-    			</article>
-		    			
-		</div>
-	</div>
+    <!-- image gallery -->
+        <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body"><div class="modal-image"></div></div>
+            <div class="modal-footer">
+                <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+                <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+                <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+                <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+            </div>
+        </div>
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images.jpeg') }}" title="Naranja" data-gallery="gallery">Naranja</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images1.jpeg') }}" title="Frutilla" data-gallery="gallery">Frutilla</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images2.jpg') }}" title="Morron" data-gallery="gallery">Limon</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images3.jpg') }}" title="Pera" data-gallery="gallery">Pera</a>
+        </div>
 	<a class="scroll scroll-prompt" href="#talktous" title=""><span>Click to Scroll</span></a>
 </section>
 {# ------------------------------------------------------------------------------------------------------------------------------#}
@@ -455,6 +451,12 @@ $(function() {
 });
 
 </script>
+
+<!--image gallery script-->
+    <script src="{{ asset('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js') }}"></script>
+    <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/load-image.js') }}"></script>
+    <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/bootstrap-image-gallery.js') }}"></script>
 
 
 <script type="text/javascript">

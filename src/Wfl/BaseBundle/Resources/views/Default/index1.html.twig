@@ -1,16 +1,99 @@
 <html>
     <head>
     
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
-    <!--<link href="{{ asset('carousel/bootstrap-combined.min.css')}}" rel="stylesheet" /> calesita mas grande nomas :/ -->
-    <script src="{{ asset('http://code.jquery.com/jquery.js') }}"></script> 
-    
+    <!-- image gallery libs -->
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-responsive.css') }}">
+    <!--[if lt IE 7]><link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-ie6.css') }}"><![endif]-->
+    <link rel="stylesheet" href="{{ asset('Bootstrap-Image-Gallery-2.10.2/css/bootstrap-image-gallery.css') }}">
+  
     
     </head>
     
     <body>
         
+    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body"><div class="modal-image"></div></div>
+            <div class="modal-footer">
+                <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+                <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+                <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+                <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+            </div>
+        </div>
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images.jpeg') }}" title="Naranja" data-gallery="gallery">Naranja</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images1.jpeg') }}" title="Frutilla" data-gallery="gallery">Frutilla</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images2.jpg') }}" title="Morron" data-gallery="gallery">Morron</a>
+            <a href="{{ asset('Bootstrap-Image-Gallery-2.10.2/img/images3.jpg') }}" title="Pera" data-gallery="gallery">Pera</a>
+        </div>
         
-
+        <script src="{{ asset('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js') }}"></script>
+        <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/load-image.js') }}"></script>
+        <script src="{{ asset('Bootstrap-Image-Gallery-2.10.2/js/bootstrap-image-gallery.js') }}"></script>
+        
+        
+        {#<script type="text/javascript">
+        $('#modal-gallery').on('load', function () {
+            var modalData = $(this).data('modal');
+            // modalData.$links is the list of (filtered) element nodes as jQuery object
+            // modalData.img is the img (or canvas) element for the loaded image
+            // modalData.options.index is the index of the current link
+        });
+        </script>#}
+        
+        <script type="text/javascript">
+            $('#gallery').imagegallery({
+                // selector given to jQuery's delegate method:
+                selector: 'a[data-gallery="gallery"]',
+                // event handler namespace:
+                namespace: 'imagegallery',
+                // Shows the next image after the given time in ms (0 = disabled):
+                slideshow: 0,
+                // Offset of image width to viewport width:
+                offsetWidth: 100,
+                // Offset of image height to viewport height:
+                offsetHeight: 100,
+                // Display images fullscreen (overrides offsets):
+                fullscreen: false,
+                // Display images as canvas elements:
+                canvas: false,
+                // body class added on dialog display:
+                bodyClass: 'gallery-body',
+                // element id of the loading animation:
+                loaderId: 'gallery-loader',
+                // list of available dialog effects,
+                // used when show/hide is set to "random":
+                effects: [
+                    'blind',
+                    'clip',
+                    'drop',
+                    'explode',
+                    'fade',
+                    'fold',
+                    'puff',
+                    'slide',
+                    'scale'
+                ],
+                // The following are jQuery UI dialog options, see
+                // http://jqueryui.com/demos/dialog/#options
+                // for additional options and documentation:
+                modal: true,
+                resizable: false,
+                width: 'auto',
+                height: 'auto',
+                show: 'fade',
+                hide: 'fade',
+                dialogClass: 'gallery-dialog'
+            });     
+        </script>
+        
+        
     </body>
 </html>
