@@ -3,6 +3,10 @@
 .home {
     background-color: #FAA732;
     height: 800px;
+    background-image: url(/img/casitas.png);
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 .home hgroup h3 {
