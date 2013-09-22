@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 
     <title>Wynkl</title>
@@ -6,6 +7,15 @@
     <link href="{{ asset('menu.css')}}" rel="stylesheet" />
     <link href="{{ asset('base.css')}}" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+    
+    <!-- least.js CSS-file -->
+    <link href="{{ asset('least/css/least.min.css')}}" rel="stylesheet" />
+    <!-- jQuery libary -->
+    <script src="{{ asset('http://code.jquery.com/jquery-latest.js')}}" defer="defer"></script>
+    <!-- least.js JS-file -->
+    <script src="{{ asset('least/js/least.min.js')}}" defer="defer"></script>
+    <!-- Lazyload JS-file -->
+    <script src="{{ asset('least/js/jquery.lazyload.min.js')}}" defer="defer"></script>
     
 </head>
 <body>
@@ -60,7 +70,72 @@
         </hgroup>
     </section>
     
-    <section class="inmobiliarias"></section>
+    <section class="inmobiliarias">
+        
+        <hgroup>
+            <h1>Inmobiliarias</h1>
+            <p>Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad </p>
+        </hgroup>
+    
+        <section class="inmb-gallery">
+        <ul id="gallery">
+            <li id="fullPreview"></li>
+
+            <!-- 1 -->
+                <li>
+                    <a href="least/img/full/1.jpg"></a>
+                    <img data-original="least/img/thumb/1.jpg" src="least/img/thumb/1.jpg" width="240" height="150" alt="Photo" />
+                    
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Grupo Kell   
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    Ver mas
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projectInfo">
+                        <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    </div>
+                </li>
+                
+                <!-- 2 -->
+                <li>
+                    <a href="least/img/full/2.jpg"></a>
+                    <img data-original="least/img/thumb/2.jpg" src="least/img/thumb/2.jpg" width="240" height="150" alt="Photo" />
+                    
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Photo   
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View Picture
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="projectInfo">
+                        <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    </p>
+                </li>
+                
+                
+        </ul>
+        </section>
+    </section>
     
     <section class="fideicomisos"></section>
     
@@ -68,5 +143,11 @@
     
     <section class="buscar"></section>
        
-
+{# script least #}
+    <script>
+        $(document).ready(function(){
+            $('#gallery').least();
+        });
+    </script>
 </body>
+</html>

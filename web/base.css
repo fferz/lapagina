@@ -27,3 +27,27 @@
     top: 40%;
     left: 30%;
 }
+
+/* bloque "inmobiliarias */
+
+.inmobiliarias hgroup {
+    
+    background-color: #E7E6E4;
+    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.inmobiliarias hgroup h1{
+    font-size: 60px;
+    font-family: 'Arial';
+}
