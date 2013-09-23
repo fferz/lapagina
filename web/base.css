@@ -3,6 +3,7 @@
 .home {
     background-color: #FAA732;
     height: 800px;
+    width: 100%;
     background-image: url(/img/casitas.png);
     background-repeat:no-repeat;
     background-attachment: scroll;
@@ -30,24 +31,27 @@
 
 /* bloque "inmobiliarias */
 
-.inmobiliarias hgroup {
+#cont-hgroup-inmb {
     
     background-color: #E7E6E4;
+    height: 300px;
+    display:table;
+    width: 100%;
+}
+
+.inmobiliarias hgroup {
     
-    width: 100px;
-    height: 100px;
-    background-color: red;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
 }
 
 .inmobiliarias hgroup h1{
     font-size: 60px;
+    font-family: 'Arial';
+}
+
+.inmobiliarias hgroup p{
+    font-size: 30px;
     font-family: 'Arial';
 }
